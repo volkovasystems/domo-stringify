@@ -1,9 +1,6 @@
 try{ var base = window; }catch( error ){ var base = exports; }
 ( function module( base ){
 	define( "domoStringify",
-		[
-			"domo"
-		],
 		function construct( ){
 			var domoStringify = function domoStringify( DOMs ){
 				if( !( DOMs instanceof Array ) ){
@@ -15,7 +12,6 @@ try{ var base = window; }catch( error ){ var base = exports; }
 				}
 				return DOMs.join( "" );
 			};
-
 			base.domoStringify = domoStringify;
 			return domoStringify;
 		} );
